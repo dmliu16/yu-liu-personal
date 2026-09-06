@@ -109,6 +109,18 @@ export default function PersonalSite({ page = 'home' }: { page?: string }) {
                     'Professor · Chang Jiang Distinguished Professor',
                   )}
                 </p>
+                <p className="small">
+                  <a
+                    href="https://rsc.sus.edu.cn/info/1063/1667.htm"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    {t(
+                      '享受国务院政府特殊津贴专家',
+                      'Recipient of the State Council Special Government Allowance',
+                    )}
+                  </a>
+                </p>
                 <div className="hero-rule" />
                 <h2>
                   {t(
@@ -397,6 +409,43 @@ function Content({
               </article>
             ))}
           </div>
+          <section className="timeline">
+            <h2>{t('主持的代表性项目', 'Selected projects led by Liu')}</h2>
+            <ul>
+              <li>
+                {t(
+                  '国家重点研发计划“科技冬奥”重点专项：冬季项目运动员技能优化关键技术研究。',
+                  'National Key R&D Programme, Winter Olympics initiative: key technologies for optimising winter-sport athletes’ skills.',
+                )}
+              </li>
+              <li>
+                {t(
+                  '国家自然科学基金重点项目：无创深部脑刺激对提升人体运动能力的影响及其机制研究。',
+                  'National Natural Science Foundation key project: noninvasive deep brain stimulation, motor performance and underlying mechanisms.',
+                )}
+              </li>
+              <li>
+                {t(
+                  '国家体育总局科研项目：体育大模型助力竞技表现提升的研究与应用。',
+                  'General Administration of Sport research project: sports large models for athletic performance.',
+                )}
+              </li>
+              <li>
+                {t(
+                  '国际合作：美国 NIKE 总公司“全球合作研究伙伴”项目。',
+                  'International collaboration: NIKE global research partnership programme.',
+                )}
+              </li>
+            </ul>
+            <a
+              className="text-link"
+              href="https://kxyjy.sus.edu.cn/info/1159/1035.htm"
+              target="_blank"
+              rel="noreferrer"
+            >
+              {t('学校项目介绍', 'University project profile')} ↗
+            </a>
+          </section>
           <aside className="venture">
             <p className="eyebrow">{t('科研转化', 'Research translation')}</p>
             <h2>IntellectSpark</h2>
@@ -481,8 +530,8 @@ function Content({
             <h2>{t('个人简介', 'Biography')}</h2>
             <p>
               {t(
-                '刘宇是上海体育大学教授、教育部“长江学者奖励计划”特聘教授，研究涉及运动生物力学、运动控制及其在竞技体育中的应用。',
-                'Yu Liu is a professor at Shanghai University of Sport and a Chang Jiang Distinguished Professor. His research encompasses biomechanics, motor control and applications in competitive sport.',
+                '刘宇是上海体育大学教授、博士生导师、交叉学科研究院院长，教育部“长江学者”特聘教授、享受国务院政府特殊津贴专家。研究涉及运动生物力学、运动神经科学及其在竞技体育中的应用。',
+                'Yu Liu is a professor, doctoral supervisor and head of the Institute of Interdisciplinary Studies at Shanghai University of Sport. A Chang Jiang Distinguished Professor and recipient of the State Council Special Government Allowance, he studies biomechanics, movement neuroscience and their applications in competitive sport.',
               )}
             </p>
             <div className="timeline">
@@ -496,20 +545,26 @@ function Content({
                 [
                   '教学与科研',
                   'Academic career',
-                  '在上海体育学院（现上海体育大学）任教，曾任运动科学学院院长。',
-                  'He joined Shanghai University of Sport and previously served as dean of its School of Kinesiology.',
+                  '曾在中国文化大学体育学系任教，2005年加入上海体育学院（现上海体育大学），曾任运动科学学院院长。现任交叉学科研究院院长、“运动健身科技”教育部重点实验室主任。',
+                  'After teaching at Chinese Culture University, Liu joined Shanghai University of Sport in 2005. He previously served as dean of its School of Kinesiology and now heads the Institute of Interdisciplinary Studies and the Ministry of Education Key Laboratory of Exercise and Health Sciences.',
                 ],
                 [
                   '学术服务',
                   'Academic service',
-                  '曾任亚洲运动训练科学学会2018年至2020年主席。',
-                  'He served as president of the Asia Association of Coaching Science from 2018 to 2020.',
+                  '曾任亚洲运动训练科学学会主席、国际生物力学学会执委（2013—2015）。学校介绍亦列有中国体育科学学会运动生物力学分会副主任委员及 Journal of Sport and Health Science 副主编等学术职务。',
+                  'Liu has served as president of the Asia Association of Coaching Science and on the International Society of Biomechanics executive council (2013–2015). His university profile also lists service as vice-chair of the biomechanics branch of the China Sport Science Society and associate editor of the Journal of Sport and Health Science.',
                 ],
                 [
                   '学术荣誉',
                   'Academic recognition',
-                  '教育部“长江学者”特聘教授；美国国家体育科学院（NAK）会士及美国运动医学会（ACSM）会士。',
-                  'Chang Jiang Distinguished Professor; fellow of the National Academy of Kinesiology and the American College of Sports Medicine.',
+                  '教育部“长江学者”特聘教授；享受国务院政府特殊津贴专家；上海市“领军人才”；上海市高校特聘教授“东方学者”；美国国家体育科学院外籍会士（FNAK）、美国运动医学学会会士（FACSM）。',
+                  'Chang Jiang Distinguished Professor; recipient of the State Council Special Government Allowance; Shanghai Leading Talent; Shanghai Eastern Scholar Distinguished Professor; international fellow of the National Academy of Kinesiology (FNAK) and fellow of the American College of Sports Medicine (FACSM).',
+                ],
+                [
+                  '教学与科研奖励',
+                  'Teaching and research awards',
+                  '国家级教学成果奖一等奖（排名2）、上海市技术发明奖二等奖（排名1）、上海市科技进步奖一等奖（排名9）。',
+                  'First prize in the national teaching achievement awards (second-ranked contributor), second prize in the Shanghai Technological Invention Awards (first-ranked contributor), and first prize in the Shanghai Science and Technology Progress Awards (ninth-ranked contributor).',
                 ],
               ].map((a) => (
                 <section key={a[0]}>
@@ -518,6 +573,24 @@ function Content({
                 </section>
               ))}
             </div>
+            <p className="small">
+              {t('学校人物介绍：', 'University profiles: ')}
+              <a
+                href="https://rsc.sus.edu.cn/info/1063/1667.htm"
+                target="_blank"
+                rel="noreferrer"
+              >
+                {t('人事处', 'Human Resources')}
+              </a>{' '}
+              ·{' '}
+              <a
+                href="https://kxyjy.sus.edu.cn/info/1159/1035.htm"
+                target="_blank"
+                rel="noreferrer"
+              >
+                {t('交叉学科研究院', 'Institute profile')}
+              </a>
+            </p>
             <a
               className="text-link"
               href="https://www.coachingscience.asia/index.php/en/about/president"
