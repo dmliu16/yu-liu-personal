@@ -13,8 +13,8 @@ Pages: home, research, selected publications (searchable), personal background, 
 - Confirm current appointments and both language versions with Yu Liu.
 - Add the complete approved publication, patent and award record; current publications are a small selection.
 - Add the preferred professional email. No placeholder email or working contact form is included.
-- Confirm wording about IntellectSpark and portrait permission for the final public site.
-- Select hosting after testing mainland-China access. No public deployment is configured.
+- The research venture is 上海魏来脑宇科技有限公司, separate from the inactive US entity IntellectSpark.
+- Test the hosted site from mainland China before choosing a permanent domain.
 
 ## Sources
 
@@ -25,3 +25,7 @@ Pages: home, research, selected publications (searchable), personal background, 
 - Publication DOI links are stored alongside the entries.
 
 The investor decks, patient materials, and private family documents are not part of this repository.
+
+## Static hosting
+
+`npm run build` exports all five pages and a 404 page to `dist/client`. `npm run preview:static` serves only these files at port 3001. `npm run deploy:static` deploys them to Cloudflare after authentication. The deployment configuration has no Worker entrypoint, database, or server bindings. In Cloudflare Git builds use `npm run build` and deployment command `npx wrangler deploy --config wrangler.static.json`.
