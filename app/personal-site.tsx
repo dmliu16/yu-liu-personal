@@ -448,11 +448,11 @@ function Content({
           </section>
           <aside className="venture">
             <p className="eyebrow">{t('科研转化', 'Research translation')}</p>
-            <h2>IntellectSpark</h2>
+            <h2>上海魏来脑宇科技有限公司</h2>
             <p>
               {t(
-                '刘宇参与的创业项目，探索神经调控相关研究的转化应用。',
-                'An entrepreneurial venture involving Yu Liu, exploring the translation of neuromodulation research.',
+                '刘宇参与的中国创业企业，探索神经调控相关研究的转化应用。',
+                'A China-based company involving Yu Liu, exploring the translation of neuromodulation research.',
               )}
             </p>
           </aside>
