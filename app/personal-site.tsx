@@ -176,29 +176,18 @@ export default function PersonalSite({ page = 'home' }: { page?: string }) {
                     className="area"
                     key={a[0]}
                   >
-                    <div className={'visual visual-' + i}>
-                      <svg viewBox="0 0 320 130" aria-hidden="true">
-                        {i === 0 ? (
-                          <>
-                            <path d="M35 105 Q90 10 150 80 T285 25" />
-                            <path d="M35 120 Q90 25 150 95 T285 40" />
-                            <circle cx="150" cy="80" r="7" />
-                          </>
-                        ) : i === 1 ? (
-                          <>
-                            <path d="M20 112 L124 22 L179 75 L225 38 L300 112" />
-                            <path d="M100 105 Q192 72 265 20" />
-                          </>
-                        ) : (
-                          <>
-                            {[0, 1, 2].map((n) => (
-                              <path
-                                key={n}
-                                d={`M15 ${65 + n * 10} Q55 ${-10 + n * 10} 95 ${65 + n * 10} T175 ${65 + n * 10} T255 ${65 + n * 10} T335 ${65 + n * 10}`}
-                              />
-                            ))}
-                          </>
-                        )}
+                    <div className="visual">
+                      <svg
+                        viewBox={`${[135, 673, 1207][i]} 290 ${[498, 494, 494][i]} 218`}
+                        preserveAspectRatio="xMidYMid slice"
+                        aria-hidden="true"
+                        focusable="false"
+                      >
+                        <image
+                          href={sitePrefix + '/images/research-artwork.png'}
+                          width="1840"
+                          height="854"
+                        />
                       </svg>
                     </div>
                     <h3>
