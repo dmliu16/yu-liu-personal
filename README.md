@@ -1,6 +1,6 @@
 # Yu Liu personal website
 
-Private working repository for the Chinese-first personal academic website of Professor Yu Liu. This is separate from the existing `dmliu16/yuliu` site.
+Public source repository for the Chinese-first personal academic website of Professor Yu Liu. This is separate from the existing `dmliu16/yuliu` site.
 
 ## Development
 
@@ -29,3 +29,9 @@ The investor decks, patient materials, and private family documents are not part
 ## Static hosting
 
 `npm run build` exports all five pages and a 404 page to `dist/client`. `npm run preview:static` serves only these files at port 3001. `npm run deploy:static` deploys them to Cloudflare after authentication. The deployment configuration has no Worker entrypoint, database, or server bindings. In Cloudflare Git builds use `npm run build` and deployment command `npx wrangler deploy --config wrangler.static.json`.
+
+## Production and backup
+
+- Primary: https://yu-liu.pages.dev/ (Cloudflare Pages). Build command `npm run build`, output `dist/client`.
+- Backup: https://dmliu16.github.io/yu-liu-personal/ (GitHub Pages). The Pages workflow builds with `NEXT_PUBLIC_SITE_PREFIX=/yu-liu-personal` so assets and navigation use the repository path.
+- Both update automatically from `main`. Cloudflare preview deployments use other branches.

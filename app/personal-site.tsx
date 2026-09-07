@@ -7,6 +7,8 @@ const subscribeLanguage = (callback: () => void) => {
 };
 const getLanguage = () =>
   new URLSearchParams(location.search).get('lang') === 'en';
+const sitePrefix = process.env.NEXT_PUBLIC_SITE_PREFIX || '';
+const pageUrl = (url: string) => sitePrefix + url + (sitePrefix && url !== '/' ? '.html' : '');
 const routes = ['/', '/research', '/publications', '/about', '/contact'];
 const labels = ['首页', '研究方向', '学术成果', '个人经历', '联系'];
 const english = ['Home', 'Research', 'Publications', 'About', 'Contact'];
@@ -17,7 +19,7 @@ export default function PersonalSite({ page = 'home' }: { page?: string }) {
     document.documentElement.lang = en ? 'en' : 'zh-CN';
   }, [en]);
   const t = (cn: string, eng: string) => (en ? eng : cn);
-  const href = (url: string) => url + (en ? '?lang=en' : '');
+  const href = (url: string) => pageUrl(url) + (en ? '?lang=en' : '');
   const areas = [
     [
       '运动生物力学',
@@ -148,7 +150,7 @@ export default function PersonalSite({ page = 'home' }: { page?: string }) {
                   unoptimized
                   width={600}
                   height={800}
-                  src="/images/yu-liu.png"
+                  src={sitePrefix + '/images/yu-liu.png'}
                   alt="刘宇教授肖像"
                 />
                 <figcaption>
@@ -280,6 +282,7 @@ function Content({
   areas: string[][];
 }) {
   const t = (cn: string, eng: string) => (en ? eng : cn);
+  const href = (url: string) => pageUrl(url) + (en ? '?lang=en' : '');
   const [query, setQuery] = useState('');
   const pubs = [
     {
@@ -523,7 +526,7 @@ function Content({
             unoptimized
             width={600}
             height={800}
-            src="/images/yu-liu.png"
+            src={sitePrefix + '/images/yu-liu.png'}
             alt="刘宇教授"
           />
           <div>
@@ -628,10 +631,10 @@ function Content({
           </div>
           <aside>
             <h3>{t('了解研究', 'Explore the research')}</h3>
-            <a href={en ? '/research?lang=en' : '/research'}>
+            <a href={href('/research')}>
               {t('研究方向', 'Research areas')} ↗
             </a>
-            <a href={en ? '/publications?lang=en' : '/publications'}>
+            <a href={href('/publications')}>
               {t('学术成果', 'Publications')} ↗
             </a>
             <p className="small">
