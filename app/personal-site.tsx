@@ -549,8 +549,8 @@ function Content({
                 [
                   '学术荣誉',
                   'Academic recognition',
-                  '教育部“长江学者”特聘教授；享受国务院政府特殊津贴专家；上海市“领军人才”；上海市高校特聘教授“东方学者”；美国国家体育科学院外籍会士（FNAK）、美国运动医学学会会士（FACSM）。',
-                  'Chang Jiang Distinguished Professor; recipient of the State Council Special Government Allowance; Shanghai Leading Talent; Shanghai Eastern Scholar Distinguished Professor; international fellow of the National Academy of Kinesiology (FNAK) and fellow of the American College of Sports Medicine (FACSM).',
+                  '教育部“长江学者”特聘教授；享受国务院政府特殊津贴专家；国家万人计划领军人才；上海市“领军人才”；上海市高校特聘教授“东方学者”；美国国家体育科学院外籍会士（FNAK）、美国运动医学学会会士（FACSM）。',
+                  'Chang Jiang Distinguished Professor; recipient of the State Council Special Government Allowance; Leading Talent in the National Ten Thousand Talents Program; Shanghai Leading Talent; Shanghai Eastern Scholar Distinguished Professor; international fellow of the National Academy of Kinesiology (FNAK) and fellow of the American College of Sports Medicine (FACSM).',
                 ],
                 [
                   '教学与科研奖励',
