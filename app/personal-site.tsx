@@ -118,8 +118,8 @@ export default function PersonalSite({ page = 'home' }: { page?: string }) {
                     rel="noreferrer"
                   >
                     {t(
-                      '享受国务院政府特殊津贴专家',
-                      'Recipient of the State Council Special Government Allowance',
+                      '国家万人计划领军人才 · 享受国务院政府特殊津贴专家',
+                      'Leading Talent in the National Ten Thousand Talents Program · Recipient of the State Council Special Government Allowance',
                     )}
                   </a>
                 </p>
