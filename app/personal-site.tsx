@@ -531,8 +531,8 @@ function Content({
                 [
                   '教育与早期研究',
                   'Education and early research',
-                  '在北京体育大学完成本科学习，随后从事运动生物力学研究。在德国法兰克福大学获得博士学位，并在科隆体育大学从事博士后研究。',
-                  'Liu completed undergraduate studies at Beijing Sport University, earned a doctorate at the University of Frankfurt and conducted postdoctoral research at German Sport University Cologne.',
+                  '在北京体育大学完成本科学习后，于1982年7月至1987年6月在国家体委体育科学研究所运动生物力学研究室任助理研究员。随后赴德国法兰克福大学攻读博士学位，并在科隆体育大学从事博士后研究。',
+                  'After completing undergraduate studies at Beijing Sport University, Liu worked as an assistant researcher in the biomechanics laboratory of the China Institute of Sport Science under the State Physical Culture and Sports Commission from July 1982 to June 1987. He then pursued a doctorate at the University of Frankfurt and conducted postdoctoral research at German Sport University Cologne.',
                 ],
                 [
                   '教学与科研',
